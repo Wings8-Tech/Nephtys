@@ -1,4 +1,4 @@
-// Copyright (c) 2025 Jema Technology.
+// Copyright (c) 2025 Wings8 Technology.
 // Distributed under the license specified in the root directory of this project.
 
 import { useEffect, useState, useRef, useCallback } from 'react'
@@ -1228,7 +1228,7 @@ export function CallsPage() {
         </div>
       )}
       
-      {/* Liste des appels - Style JemaOS */}
+      {/* Liste des appels - Style Wings8OS */}
       <div className={`w-full md:w-[420px] bg-bg-secondary flex flex-col md:border-r border-bg-hover pb-14 md:pb-0 ${isSelectionMode ? 'pt-14' : ''}`}>
         {/* Header - Hidden in selection mode */}
         {!isSelectionMode && (

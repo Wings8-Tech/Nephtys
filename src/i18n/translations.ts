@@ -1,4 +1,4 @@
-// Copyright (c) 2026 Jema Technology.
+// Copyright (c) 2026 Wings8 Technology.
 // Distributed under the license specified in the root directory of this project.
 
 // ============ INTERNATIONALIZATION ============
@@ -172,7 +172,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     infoLabel: 'Info',
     addInfoPlaceholder: 'Add an info...',
     currentInfo: 'Your current info: "{info}"',
-    optimizedForJemaos: 'Nephtys optimized for JemaOS',
+    optimizedForWings8os: 'Nephtys optimized for Wings8OS',
     versionLabel: 'Version {version}',
     signOut: 'Sign out',
     signOutConfirm: 'Are you sure you want to sign out?',
@@ -778,19 +778,19 @@ export const translations: Record<Lang, Record<string, string>> = {
     enterMessagePlaceholder: 'Enter a message',
 
     // ============ SUBSCRIPTION GUARD ============
-    subscriptionRequired: 'This application requires a JemaOS Pro subscription.',
+    subscriptionRequired: 'This application requires a Wings8OS Pro subscription.',
     upgradeToPro: 'Upgrade to Pro',
     reconnect: 'Sign in again',
     reconnectFailed: 'Reconnection failed. Try again in a moment.',
     reconnectingTitle: 'Reconnecting…',
-    verifyingSession: 'Verifying your JemaOS session. You will be redirected automatically.',
-    jemaAccountLabel: 'Jema account',
-    jemaEmailPlaceholder: 'name@example.com',
-    jemaSignInButton: 'Sign in with Jema',
-    jemaSigningIn: 'Signing in…',
-    jemaCaptchaError: 'Anti-bot verification required. Try again.',
-    jemaCaptchaRequired: 'Anti-bot verification required. Complete the CAPTCHA and try again.',
-    jemaLoginError: 'Unable to sign in. Check your Jema credentials.',
+    verifyingSession: 'Verifying your Wings8OS session. You will be redirected automatically.',
+    wings8AccountLabel: 'Wings8 account',
+    wings8EmailPlaceholder: 'name@example.com',
+    wings8SignInButton: 'Sign in with Wings8',
+    wings8SigningIn: 'Signing in…',
+    wings8CaptchaError: 'Anti-bot verification required. Try again.',
+    wings8CaptchaRequired: 'Anti-bot verification required. Complete the CAPTCHA and try again.',
+    wings8LoginError: 'Unable to sign in. Check your Wings8 credentials.',
 
     // ============ CONTEXT MENUS / TOOLBARS ============
     messageCopied: 'Message copied!',
@@ -876,7 +876,7 @@ export const translations: Record<Lang, Record<string, string>> = {
 
     // ============ CALL CONTEXT ============
     callPermsRequired: '❌ Permissions required\n\nTo call, you must allow:\n',
-    callPermsJemaOSMobile: '• Camera and Microphone\n\nOn JemaOS Mobile:\n1. Tap the 🔒 next to the URL\n2. Enable "Camera" and "Microphone"',
+    callPermsWings8OSMobile: '• Camera and Microphone\n\nOn Wings8OS Mobile:\n1. Tap the 🔒 next to the URL\n2. Enable "Camera" and "Microphone"',
     callPermsGeneric: '• Camera and/or Microphone\n\nAllow access in your browser settings.',
     cannotAddParticipant: 'Cannot add the participant',
 
@@ -1215,7 +1215,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     infoLabel: 'Info',
     addInfoPlaceholder: 'Ajouter une info...',
     currentInfo: 'Votre info actuelle : "{info}"',
-    optimizedForJemaos: 'Nephtys optimisé pour JemaOS',
+    optimizedForWings8os: 'Nephtys optimisé pour Wings8OS',
     versionLabel: 'Version {version}',
     signOut: 'Se déconnecter',
     signOutConfirm: 'Êtes-vous sûr de vouloir vous déconnecter ?',
@@ -1819,19 +1819,19 @@ export const translations: Record<Lang, Record<string, string>> = {
     enterMessagePlaceholder: 'Entrez un message',
 
     // ============ SUBSCRIPTION GUARD ============
-    subscriptionRequired: 'Cette application nécessite un abonnement JemaOS Pro.',
+    subscriptionRequired: 'Cette application nécessite un abonnement Wings8OS Pro.',
     upgradeToPro: 'Passer à Pro',
     reconnect: 'Se reconnecter',
     reconnectFailed: 'La reconnexion a échoué. Réessayez dans un instant.',
     reconnectingTitle: 'Reconnexion en cours…',
-    verifyingSession: 'Vérification de votre session JemaOS. Vous allez être redirigé automatiquement.',
-    jemaAccountLabel: 'Compte Jema',
-    jemaEmailPlaceholder: 'nom@exemple.com',
-    jemaSignInButton: 'Se connecter avec Jema',
-    jemaSigningIn: 'Connexion…',
-    jemaCaptchaError: 'Vérification anti-robot requise. Réessayez.',
-    jemaCaptchaRequired: 'Vérification anti-robot requise. Validez le CAPTCHA et réessayez.',
-    jemaLoginError: 'Connexion impossible. Vérifiez vos identifiants Jema.',
+    verifyingSession: 'Vérification de votre session Wings8OS. Vous allez être redirigé automatiquement.',
+    wings8AccountLabel: 'Compte Wings8',
+    wings8EmailPlaceholder: 'nom@exemple.com',
+    wings8SignInButton: 'Se connecter avec Wings8',
+    wings8SigningIn: 'Connexion…',
+    wings8CaptchaError: 'Vérification anti-robot requise. Réessayez.',
+    wings8CaptchaRequired: 'Vérification anti-robot requise. Validez le CAPTCHA et réessayez.',
+    wings8LoginError: 'Connexion impossible. Vérifiez vos identifiants Wings8.',
 
     // ============ CONTEXT MENUS / TOOLBARS ============
     messageCopied: 'Message copié !',
@@ -1917,7 +1917,7 @@ export const translations: Record<Lang, Record<string, string>> = {
 
     // ============ CALL CONTEXT ============
     callPermsRequired: '❌ Permissions requises\n\nPour appeler, vous devez autoriser :\n',
-    callPermsJemaOSMobile: '• Caméra et Microphone\n\nSur JemaOS Mobile :\n1. Appuyez sur 🔒 à côté de l\'URL\n2. Activez "Caméra" et "Microphone"',
+    callPermsWings8OSMobile: '• Caméra et Microphone\n\nSur Wings8OS Mobile :\n1. Appuyez sur 🔒 à côté de l\'URL\n2. Activez "Caméra" et "Microphone"',
     callPermsGeneric: '• Caméra et/ou Microphone\n\nAutorisez l\'accès dans les paramètres de votre navigateur.',
     cannotAddParticipant: 'Impossible d\'ajouter le participant',
 

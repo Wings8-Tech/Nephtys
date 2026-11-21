@@ -10,7 +10,7 @@
     </linearGradient>
   </defs>
   
-  <!-- Bulle de chat principale (style JemaOS) -->
+  <!-- Bulle de chat principale (style Wings8OS) -->
   <path d="M 256 100 C 170 100 100 160 100 235 C 100 280 120 320 150 350 L 140 390 L 180 370 C 205 380 230 385 256 385 C 342 385 412 325 412 250 C 412 175 342 100 256 100 Z" 
         fill="white" 
         fill-opacity="0.95"/>
@@ -18,7 +18,7 @@
   <!-- Lettre N minimaliste -->
   <text x="256" y="280" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="120" font-weight="800" fill="#6b6fdb" text-anchor="middle">N</text>
   
-  <!-- Point de notification (style JemaOS) -->
+  <!-- Point de notification (style Wings8OS) -->
   <circle cx="370" cy="140" r="35" fill="#00a884"/>
   <text x="370" y="155" font-family="system-ui" font-size="40" font-weight="700" fill="white" text-anchor="middle">1</text>
 </svg>

@@ -1,4 +1,4 @@
-// Copyright (c) 2025 Jema Technology.
+// Copyright (c) 2025 Wings8 Technology.
 // Distributed under the license specified in the root directory of this project.
 
 import { useEffect, useState, useRef, useCallback, useMemo } from 'react'
@@ -1129,7 +1129,7 @@ export function ChatsPage() {
         />
       )}
       
-      {/* Liste des conversations - Style JemaOS */}
+      {/* Liste des conversations - Style Wings8OS */}
       <div className={`w-full md:w-[420px] bg-bg-secondary flex flex-col md:border-r border-bg-hover pb-20 md:pb-0 ${isSelectionMode === true ? 'pt-14' : ''}`}>
         {/* Header - COMPLETELY Hidden in selection mode - Mutually exclusive with selection bar */}
         {isSelectionMode === false && (
@@ -1162,10 +1162,10 @@ export function ChatsPage() {
         />
       </div>
 
-      {/* Zone de chat vide - Style JemaOS - Desktop only */}
+      {/* Zone de chat vide - Style Wings8OS - Desktop only */}
       <div className="hidden md:flex flex-1 bg-bg-primary flex-col items-center justify-center relative">
         <div className="text-center">
-          <h2 className="text-3xl font-light text-text-secondary mb-4">{t('optimizedForJemaos')}</h2>
+          <h2 className="text-3xl font-light text-text-secondary mb-4">{t('optimizedForWings8os')}</h2>
           <p className="text-text-secondary max-w-lg mx-auto leading-relaxed mb-6">
             {t('chatsEmptyDesc1')}<br/>
             {t('chatsEmptyDesc2')}
@@ -1218,7 +1218,7 @@ export function ChatsPage() {
 
         <div className="absolute bottom-6 text-center">
           <p className="text-xs text-gray-500">
-            {t('developedBy')} <a href="https://www.jematechnology.fr/" target="_blank" rel="noopener noreferrer" className="text-[#6b6fdb] hover:underline">Jema Technology</a> {t('footerLicense')}
+            {t('developedBy')} <a href="https://www.wings8.org/" target="_blank" rel="noopener noreferrer" className="text-[#6b6fdb] hover:underline">Wings8 Technology</a> {t('footerLicense')}
           </p>
         </div>
       </div>

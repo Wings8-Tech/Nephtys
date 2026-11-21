@@ -1,4 +1,4 @@
-// Copyright (c) 2025 Jema Technology.
+// Copyright (c) 2025 Wings8 Technology.
 // Distributed under the license specified in the root directory of this project.
 
 import { useEffect, useLayoutEffect, useState, useRef, useCallback, useMemo, lazy, Suspense } from 'react'
@@ -3884,7 +3884,7 @@ await decryptMessageRows(validData as any[], user.id)
   return (
     <MainLayout>
       <div className="flex-1 flex flex-col bg-bg-primary h-full overflow-hidden">
-        {/* Header JemaOS - FIXED at top, never scrolls - Selection mode header on mobile */}
+        {/* Header Wings8OS - FIXED at top, never scrolls - Selection mode header on mobile */}
         <ChatHeader
           isSelectionMode={isSelectionMode}
           isMobile={isMobile}
@@ -4011,7 +4011,7 @@ await decryptMessageRows(validData as any[], user.id)
           messageUserState={messageUserState}
         />
 
-        {/* Input Bar JemaOS - Fixed at bottom on mobile, above nav bar - Hidden in selection mode */}
+        {/* Input Bar Wings8OS - Fixed at bottom on mobile, above nav bar - Hidden in selection mode */}
         {!isSelectionMode && (
         <div className="fixed md:relative bottom-[calc(3.5rem+env(safe-area-inset-bottom))] md:bottom-0 left-0 right-0 bg-bg-surface px-2 sm:px-3 md:px-4 py-2 md:py-3 border-t border-bg-hover md:border-t-0 z-40">
           {/* Voice Recorder - replaces input bar when recording */}

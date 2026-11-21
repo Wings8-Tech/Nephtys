@@ -1,4 +1,4 @@
-// Copyright (c) 2025 Jema Technology.
+// Copyright (c) 2025 Wings8 Technology.
 // Distributed under the license specified in the root directory of this project.
 
 import React, { useState, useRef, useEffect, useCallback } from 'react';
@@ -266,7 +266,7 @@ export const VoiceRecorder: React.FC<VoiceRecorderProps> = ({
 
   return (
     <div className="w-full py-2">
-      {/* WhatsApp Layout + JemaOS Dark Theme - Clean design without glows */}
+      {/* WhatsApp Layout + Wings8OS Dark Theme - Clean design without glows */}
       
       {/* Top Row: Timer + Waveform + Info */}
       <div className="flex items-center gap-3 px-4 py-3">

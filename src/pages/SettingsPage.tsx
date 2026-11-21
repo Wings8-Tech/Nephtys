@@ -1,4 +1,4 @@
-// Copyright (c) 2025 Jema Technology.
+// Copyright (c) 2025 Wings8 Technology.
 // Distributed under the license specified in the root directory of this project.
 
 import { useState, useEffect, useRef } from 'react'
@@ -1041,7 +1041,7 @@ export function SettingsPage() {
         ))}
       </div>
       <div className="px-6 py-8 text-center space-y-2">
-        <p className="text-sm text-text-secondary">{t('optimizedForJemaos')}</p>
+        <p className="text-sm text-text-secondary">{t('optimizedForWings8os')}</p>
         <p className="text-xs text-text-secondary">{t('versionLabel', { version: '1.1.0' })} · build {__BUILD_COMMIT__}</p>
       </div>
       <div className="px-6 pb-8">
@@ -1859,7 +1859,7 @@ export function SettingsPage() {
           <ChevronRight size={20} className="text-text-secondary" />
         </button>
         <div className="px-6 py-8 text-center space-y-2">
-          <p className="text-sm text-text-secondary">{t('optimizedForJemaos')}</p>
+          <p className="text-sm text-text-secondary">{t('optimizedForWings8os')}</p>
           <p className="text-xs text-text-secondary">{t('versionLabel', { version: '1.1.0' })} · build {__BUILD_COMMIT__}</p>
           <p className="text-xs text-text-secondary mt-4">{t('copyright')}</p>
         </div>
@@ -1891,7 +1891,7 @@ export function SettingsPage() {
           <p className="text-sm text-text-secondary mb-4">{t('contactUsDesc')}</p>
         </div>
         <div className="space-y-3">
-          <a href="mailto:contact@jematechnology.fr" className="block py-3 rounded-xl bg-accent hover:bg-[#5a5ec9] text-white font-medium">contact@jematechnology.fr</a>
+          <a href="mailto:contact@wings8.org" className="block py-3 rounded-xl bg-accent hover:bg-[#5a5ec9] text-white font-medium">contact@wings8.org</a>
         </div>
       </div>
     </div>

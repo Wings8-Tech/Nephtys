@@ -1,4 +1,4 @@
-// Copyright (c) 2025 Jema Technology.
+// Copyright (c) 2025 Wings8 Technology.
 // Distributed under the license specified in the root directory of this project.
 
 import { BrowserRouter, Routes, Route, Navigate, useParams } from 'react-router-dom'
@@ -131,8 +131,8 @@ function ChatViewPageWithKey() {
   return <ChatViewPage key={conversationId} />
 }
 
-// Valide le paramètre ?return_to= du flux SSO : seules les apps JemaOS
-// (*.jemaos.com) et localhost (dev) sont acceptées — protection open-redirect.
+// Valide le paramètre ?return_to= du flux SSO : seules les apps Wings8OS
+// (*.wings8.org) et localhost (dev) sont acceptées — protection open-redirect.
 function getValidatedReturnTo(): string | null {
   try {
     const raw = new URLSearchParams(globalThis.location.search).get('return_to')
@@ -141,7 +141,7 @@ function getValidatedReturnTo(): string | null {
     const host = url.hostname
     const isLocal = host === 'localhost' || host === '127.0.0.1'
     if (url.protocol !== 'https:' && !isLocal) return null
-    if (host === 'jemaos.com' || host.endsWith('.jemaos.com') || isLocal) {
+    if (host === 'wings8.org' || host.endsWith('.wings8.org') || isLocal) {
       return url.href
     }
     return null
@@ -161,7 +161,7 @@ function PublicRoute({ children }: { readonly children: React.ReactNode }) {
   
   if (user) {
     // Flux SSO : un utilisateur authentifié qui arrive sur /auth avec un
-    // return_to valide est renvoyé vers l'app d'origine (ex. un PWA JemaOS
+    // return_to valide est renvoyé vers l'app d'origine (ex. un PWA Wings8OS
     // dont la session a expiré), au lieu de rester bloqué sur Nephtys.
     const returnTo = getValidatedReturnTo()
     if (returnTo) {

@@ -1,4 +1,4 @@
-// Copyright (c) 2025 Jema Technology.
+// Copyright (c) 2025 Wings8 Technology.
 // Distributed under the license specified in the root directory of this project.
 
 import { createContext, useContext, useEffect, useState, useRef, useMemo, ReactNode } from 'react'
@@ -509,7 +509,7 @@ export function CallProvider({ children }: { readonly children: ReactNode }) {
           let errorMsg = tStatic('callPermsRequired')
           
           if (permError.name === 'NotAllowedError') {
-            errorMsg += tStatic('callPermsJemaOSMobile')
+            errorMsg += tStatic('callPermsWings8OSMobile')
           } else {
             errorMsg += tStatic('callPermsGeneric')
           }
@@ -941,7 +941,7 @@ export function CallProvider({ children }: { readonly children: ReactNode }) {
       let errorMsg = tStatic('callPermsRequired')
       
       if (permError.name === 'NotAllowedError') {
-        errorMsg += tStatic('callPermsJemaOSMobile')
+        errorMsg += tStatic('callPermsWings8OSMobile')
       } else {
         errorMsg += tStatic('callPermsGeneric')
       }

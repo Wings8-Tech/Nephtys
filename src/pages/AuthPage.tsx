@@ -1,4 +1,4 @@
-// Copyright (c) 2025 Jema Technology.
+// Copyright (c) 2025 Wings8 Technology.
 // Distributed under the license specified in the root directory of this project.
 
 import { useState, useEffect } from 'react'
@@ -388,7 +388,7 @@ export function AuthPage() {
         {/* Footer */}
         <div className="text-center pt-1 sm:pt-2">
           <p className="text-[9px] sm:text-[10px] lg:text-xs text-gray-500">
-            {t('developedBy')} <a href="https://www.jematechnology.fr/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Jema Technology</a> {t('footerLicense')}
+            {t('developedBy')} <a href="https://www.wings8.org/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Wings8 Technology</a> {t('footerLicense')}
           </p>
         </div>
 

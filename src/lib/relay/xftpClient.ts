@@ -1,4 +1,4 @@
-// Copyright (c) 2025 Jema Technology.
+// Copyright (c) 2025 Wings8 Technology.
 // Distributed under the license specified in the project root.
 //
 // Client XFTP (transfert de fichiers) — s'appuie sur le client web XFTP vendoré

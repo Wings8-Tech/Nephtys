@@ -37,8 +37,8 @@
 import { createClient } from 'jsr:@supabase/supabase-js@2'
 
 const ALLOWED_ORIGINS = [
-    'https://nephtys.jemaos.com',
-    'https://www.nephtys.jemaos.com',
+    'https://nephtys.wings8.org',
+    'https://www.nephtys.wings8.org',
     'https://nephtys.app',
     'https://www.nephtys.app',
     'https://nephtys.vercel.app',

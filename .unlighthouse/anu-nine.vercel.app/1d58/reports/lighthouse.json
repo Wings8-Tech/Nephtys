@@ -1414,7 +1414,7 @@
                     "height": 14
                   },
                   "snippet": "<p class=\"text-[9px] sm:text-[10px] text-gray-500\">",
-                  "nodeLabel": "Développé par Jema Technology © 2025 • Open Source & sous licence AGPL"
+                  "nodeLabel": "Développé par Wings8 Technology © 2025 • Open Source & sous licence AGPL"
                 }
               }
             ]
@@ -2145,7 +2145,7 @@
                 "height": 14
               },
               "snippet": "<p class=\"text-[9px] sm:text-[10px] text-gray-500\">",
-              "nodeLabel": "Développé par Jema Technology © 2025 • Open Source & sous licence AGPL",
+              "nodeLabel": "Développé par Wings8 Technology © 2025 • Open Source & sous licence AGPL",
               "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.84 (foreground color: #6b7280, background color: #0b141a, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
             },
             "subItems": {
@@ -2186,8 +2186,8 @@
                 "width": 68,
                 "height": 12
               },
-              "snippet": "<a href=\"https://www.jematechnology.fr/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-accent hover:underline\">",
-              "nodeLabel": "Jema Technology",
+              "snippet": "<a href=\"https://www.wings8.org/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-accent hover:underline\">",
+              "nodeLabel": "Wings8 Technology",
               "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.35 (foreground color: #6b6fdb, background color: #0b141a, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
             },
             "subItems": {
@@ -2497,8 +2497,8 @@
                 "width": 68,
                 "height": 12
               },
-              "snippet": "<a href=\"https://www.jematechnology.fr/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-accent hover:underline\">",
-              "nodeLabel": "Jema Technology",
+              "snippet": "<a href=\"https://www.wings8.org/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-accent hover:underline\">",
+              "nodeLabel": "Wings8 Technology",
               "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 1.13:1 with the surrounding text. (Minimum contrast is 3:1, link text: #6b6fdb, surrounding text: #6b7280)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
             },
             "subItems": {
@@ -2519,7 +2519,7 @@
                       "height": 14
                     },
                     "snippet": "<p class=\"text-[9px] sm:text-[10px] text-gray-500\">",
-                    "nodeLabel": "Développé par Jema Technology © 2025 • Open Source & sous licence AGPL"
+                    "nodeLabel": "Développé par Wings8 Technology © 2025 • Open Source & sous licence AGPL"
                   }
                 }
               ]
@@ -4151,7 +4151,7 @@
               "height": 14
             },
             "snippet": "<p class=\"text-[9px] sm:text-[10px] text-gray-500\">",
-            "nodeLabel": "Développé par Jema Technology © 2025 • Open Source & sous licence AGPL"
+            "nodeLabel": "Développé par Wings8 Technology © 2025 • Open Source & sous licence AGPL"
           }
         ]
       },

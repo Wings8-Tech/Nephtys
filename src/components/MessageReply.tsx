@@ -1,4 +1,4 @@
-// Copyright (c) 2025 Jema Technology.
+// Copyright (c) 2025 Wings8 Technology.
 // Distributed under the license specified in the root directory of this project.
 
 import React from 'react';
@@ -258,7 +258,7 @@ export const MessageReply: React.FC<MessageReplyProps> = ({
   );
 
   if (isPreview) {
-    // Affichage dans la barre d'input (avant d'envoyer) - Style JemaOS
+    // Affichage dans la barre d'input (avant d'envoyer) - Style Wings8OS
     return (
       <div className="mb-2 mx-1 bg-bg-hover rounded-xl overflow-hidden shadow-sm border border-white/5">
         {renderContent()}
@@ -266,7 +266,7 @@ export const MessageReply: React.FC<MessageReplyProps> = ({
     );
   }
 
-  // Affichage dans le message (citation) - Style JemaOS
+  // Affichage dans le message (citation) - Style Wings8OS
   return (
     <button
       type="button"

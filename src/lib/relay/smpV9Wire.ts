@@ -1,4 +1,4 @@
-// Copyright (c) 2025 Jema Technology.
+// Copyright (c) 2025 Wings8 Technology.
 // Distributed under the license specified in the project root.
 //
 // Transport SMP (v9..v15) « natif » — implémente le protocole SMP tel qu'il a

@@ -29,19 +29,19 @@ module.exports = {
 				
 				// Mapping des anciennes couleurs hardcodées vers les variables
 				// Fond principal sombre (#0b141a) -> bg-primary
-				'jemaos-dark': 'var(--bg-primary)',
+				'wings8os-dark': 'var(--bg-primary)',
 				// Fond secondaire sombre (#111b21) -> bg-secondary
-				'jemaos-darker': 'var(--bg-secondary)',
+				'wings8os-darker': 'var(--bg-secondary)',
 				// Surfaces (#202c33) -> bg-surface
-				'jemaos-surface': 'var(--bg-surface)',
+				'wings8os-surface': 'var(--bg-surface)',
 				// Hover (#2a3942) -> bg-hover
-				'jemaos-hover': 'var(--bg-hover)',
+				'wings8os-hover': 'var(--bg-hover)',
 				// Texte clair (#e9edef) -> text-primary
-				'jemaos-text': 'var(--text-primary)',
+				'wings8os-text': 'var(--text-primary)',
 				// Texte secondaire (#8696a0) -> text-secondary
-				'jemaos-text-secondary': 'var(--text-secondary)',
+				'wings8os-text-secondary': 'var(--text-secondary)',
 				// Accent violet
-				'jemaos-accent': 'var(--accent)',
+				'wings8os-accent': 'var(--accent)',
 				
 				// Primary - Violet Nephtys (conservé pour compatibilité)
 				primary: {
