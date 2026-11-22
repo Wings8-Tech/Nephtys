@@ -1,5 +1,5 @@
 -- Wings8 retention purge on pg_cron (no Edge Function / service-role secret needed).
--- Deletes delivered/read messages older than 24h and their media object rows.
+-- Deletes delivered/read messages older than 24h. Media objects are removed by Storage lifecycle/API.
 
 create or replace function public.wings8_purge_relayed()
 returns integer
@@ -22,12 +22,6 @@ begin
     using candidates c
     where m.id = c.id
     returning m.id
-  ),
-  removed_objects as (
-    delete from storage.objects o
-    using candidates c
-    where o.bucket_id = 'media'
-      and o.name = c.media_url
   )
   select count(*) into removed from deleted;
   return coalesce(removed, 0);
