@@ -280,7 +280,7 @@ export function getTorGatewayUrl(): string {
   const envGateway = import.meta.env.VITE_TOR_GATEWAY_URL as string | undefined;
   if (envGateway?.trim()) return envGateway.trim();
   const relay =
-    (import.meta.env.VITE_SMP_RELAY_URL as string | undefined) ?? 'wss://78-232-3-78.sslip.io/';
+    (import.meta.env.VITE_SMP_RELAY_URL as string | undefined) ?? '';
   try {
     const u = new URL(relay);
     u.pathname = '/tor';
@@ -321,7 +321,7 @@ const RELAY_POOL_KEY = 'nephtys_relay_pool';
 const RELAY_MODE_KEY = 'nephtys_relay_mode';
 
 function defaultRelayUrl(): string {
-  return (import.meta.env.VITE_SMP_RELAY_URL as string | undefined) ?? 'wss://78-232-3-78.sslip.io/';
+  return (import.meta.env.VITE_SMP_RELAY_URL as string | undefined) ?? '';
 }
 
 /**
@@ -580,7 +580,7 @@ export function getSmpBridgeUrl(): string {
   return repairSmpBridgeUrl(
     (import.meta.env.VITE_SMP_V9_BRIDGE_URL as string | undefined)?.trim() ||
       (import.meta.env.VITE_SMP_BRIDGE_URL as string | undefined)?.trim() ||
-      'wss://78-232-3-78.sslip.io/simplex',
+      '',
   );
 }
 
@@ -641,7 +641,7 @@ export interface PrivateRelayWireSelection {
 export function createPrivateRelayWire(): PrivateRelayWireSelection {
   const mode = import.meta.env.VITE_RELAY_MODE as string | undefined;
   const smpUrl =
-    (import.meta.env.VITE_SMP_RELAY_URL as string | undefined) ?? 'wss://78-232-3-78.sslip.io/';
+    (import.meta.env.VITE_SMP_RELAY_URL as string | undefined) ?? '';
   const smpKeyHash = import.meta.env.VITE_SMP_RELAY_KEY_HASH as string | undefined;
   let wire: RelayWire;
   let failover: FailoverRelayWire | null = null;

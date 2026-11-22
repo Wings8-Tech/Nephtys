@@ -15,7 +15,7 @@
  */
 
 const TURN_CREDS_URL =
-  (import.meta.env.VITE_TURN_CREDS_URL as string | undefined) || 'https://78-232-3-78.sslip.io/turn';
+  (import.meta.env.VITE_TURN_CREDS_URL as string | undefined) || '';
 
 // Repli tant que l'endpoint `/turn` n'a pas répondu : STUN **de notre propre
 // coturn** uniquement (dérivé de l'hôte du endpoint). Aucun STUN tiers
