@@ -162,11 +162,11 @@ export function sanitizePreviewUrl(url: string): string {
 const memoryCache = new Map<string, { data: LinkPreviewData | null; expires: number }>();
 const MEMORY_TTL_MS = 30 * 60 * 1000; // 30 min
 
-const SUPABASE_URL =
-  (import.meta as any).env?.VITE_SUPABASE_URL || 'https://betcypetbbgzyrinpqcg.supabase.co';
 const SUPABASE_ANON_KEY = (import.meta as any).env?.VITE_SUPABASE_ANON_KEY as string | undefined;
 
-const EDGE_FUNCTION_URL = `${SUPABASE_URL}/functions/v1/link-preview`;
+const EDGE_FUNCTION_URL =
+  ((import.meta as any).env?.VITE_LINK_PREVIEW_URL as string | undefined) ||
+  'https://connect-api.wings8tech.com/v1/link-preview';
 // Timeout côté client : on laisse une marge au-dessus du timeout serveur (4s)
 const CLIENT_TIMEOUT_MS = 5000;
 
