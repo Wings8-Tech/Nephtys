@@ -15,7 +15,7 @@
     --text-primary: #e9edef;
     --text-secondary: #d1d7db;
     --text-tertiary: #8696a0;
-    --accent: #6b6fdb;
+    --accent: #0A1F4A;
   }
 
   :root.light {
@@ -26,7 +26,7 @@
     --text-primary: #111b21;
     --text-secondary: #54656f;
     --text-tertiary: #8696a0;
-    --accent: #6b6fdb;
+    --accent: #0A1F4A;
   }
 
   body {

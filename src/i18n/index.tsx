@@ -24,13 +24,7 @@ function detectDefaultLang(): Lang {
   } catch {
     // localStorage indisponible → détection navigateur.
   }
-  try {
-    const nav = (navigator.language || '').toLowerCase();
-    if (nav.startsWith('en')) return 'en';
-  } catch {
-    // navigator indisponible → repli français.
-  }
-  return 'fr';
+  return 'en';
 }
 
 let currentLang: Lang = detectDefaultLang();

@@ -48,7 +48,7 @@ module.exports = {
 					100: '#d4d5f7',
 					300: '#9fa1eb',
 					400: '#8385e3',
-					500: '#6b6fdb',
+					500: '#0A1F4A',
 					600: '#5558c9',
 				},
 				// Glassmorphism surfaces (dark theme)
