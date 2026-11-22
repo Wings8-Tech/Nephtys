@@ -101,7 +101,7 @@ BEGIN
       COALESCE(ma.author_id, m.sender_id) AS user_id,
       COALESCE(m.is_starred, false),
       COALESCE(m.is_pinned, false),
-      m.pinned_until,
+      null::timestamptz,
       now()
     FROM public.messages m
     LEFT JOIN private.message_authors ma ON ma.message_id = m.id
@@ -116,7 +116,7 @@ BEGIN
       m.sender_id,
       COALESCE(m.is_starred, false),
       COALESCE(m.is_pinned, false),
-      m.pinned_until,
+      null::timestamptz,
       now()
     FROM public.messages m
     WHERE (m.is_starred IS TRUE OR m.is_pinned IS TRUE)

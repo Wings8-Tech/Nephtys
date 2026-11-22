@@ -50,4 +50,10 @@ BEGIN
   END IF;
 END; $function$;
 
-DROP POLICY IF EXISTS "view_authenticated_documents" ON public.documents;
+do $doc$
+begin
+  if to_regclass('public.documents') is not null then
+    execute 'drop policy if exists "view_authenticated_documents" on public.documents';
+  end if;
+end
+$doc$;

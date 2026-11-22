@@ -44,9 +44,15 @@ INSERT INTO public.user_key_material (
     ratchet_keys_encrypted, ratchet_keys_salt, ratchet_keys_iv
 )
 SELECT
-    id,
-    encrypted_private_key, private_key_salt, private_key_iv,
-    x25519_private_key, x25519_salt, x25519_iv,
-    ratchet_keys_encrypted, ratchet_keys_salt, ratchet_keys_iv
-FROM public.profiles
+    p.id,
+    to_jsonb(p)->>'encrypted_private_key',
+    to_jsonb(p)->>'private_key_salt',
+    to_jsonb(p)->>'private_key_iv',
+    to_jsonb(p)->>'x25519_private_key',
+    to_jsonb(p)->>'x25519_salt',
+    to_jsonb(p)->>'x25519_iv',
+    to_jsonb(p)->>'ratchet_keys_encrypted',
+    to_jsonb(p)->>'ratchet_keys_salt',
+    to_jsonb(p)->>'ratchet_keys_iv'
+FROM public.profiles p
 ON CONFLICT (user_id) DO NOTHING;

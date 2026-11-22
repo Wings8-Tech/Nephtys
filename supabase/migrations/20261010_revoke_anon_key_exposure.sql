@@ -26,14 +26,37 @@
 -- ============================================================================
 
 -- 1) anon ne doit jamais lire les colonnes de clés privées
-REVOKE SELECT (
-    encrypted_private_key, private_key_salt, private_key_iv,
-    x25519_private_key, x25519_salt, x25519_iv,
-    ratchet_keys_encrypted, ratchet_keys_salt, ratchet_keys_iv
-) ON public.profiles FROM anon;
+do $rev$
+declare
+  col text;
+begin
+  foreach col in array array[
+    'encrypted_private_key','private_key_salt','private_key_iv',
+    'x25519_private_key','x25519_salt','x25519_iv',
+    'ratchet_keys_encrypted','ratchet_keys_salt','ratchet_keys_iv'
+  ]
+  loop
+    if exists (
+      select 1 from information_schema.columns
+      where table_schema = 'public' and table_name = 'profiles' and column_name = col
+    ) then
+      execute format('revoke select (%I) on public.profiles from anon', col);
+    end if;
+  end loop;
+end
+$rev$;
 
 -- 2) password_hash : jamais exposé au client
-REVOKE SELECT (password_hash) ON public.profiles FROM anon, authenticated;
+do $pw$
+begin
+  if exists (
+    select 1 from information_schema.columns
+    where table_schema = 'public' and table_name = 'profiles' and column_name = 'password_hash'
+  ) then
+    revoke select (password_hash) on public.profiles from anon, authenticated;
+  end if;
+end
+$pw$;
 
 -- 3) one_time_prekeys : UPDATE limité à la consommation (is_used false -> true)
 DROP POLICY IF EXISTS "otpk_update_consume" ON public.one_time_prekeys;

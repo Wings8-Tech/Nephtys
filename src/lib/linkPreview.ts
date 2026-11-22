@@ -163,7 +163,7 @@ const memoryCache = new Map<string, { data: LinkPreviewData | null; expires: num
 const MEMORY_TTL_MS = 30 * 60 * 1000; // 30 min
 
 const SUPABASE_URL =
-  (import.meta as any).env?.VITE_SUPABASE_URL || 'https://imkfbalgviqeotpjogff.supabase.co';
+  (import.meta as any).env?.VITE_SUPABASE_URL || 'https://betcypetbbgzyrinpqcg.supabase.co';
 const SUPABASE_ANON_KEY = (import.meta as any).env?.VITE_SUPABASE_ANON_KEY as string | undefined;
 
 const EDGE_FUNCTION_URL = `${SUPABASE_URL}/functions/v1/link-preview`;
