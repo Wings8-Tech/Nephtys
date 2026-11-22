@@ -1,4 +1,9 @@
 import '@testing-library/jest-dom'
+import { beforeEach } from 'vitest'
+
+beforeEach(() => {
+  localStorage.setItem('nephtys_lang', 'fr')
+})
 
 // Mock ResizeObserver for all tests
 class ResizeObserver {

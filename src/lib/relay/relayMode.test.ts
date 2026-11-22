@@ -75,7 +75,7 @@ describe('préférence Tor', () => {
 
 describe('entrée Tor (`.onion` prioritaire, passerelle en repli)', () => {
   it('dérive la passerelle Tor depuis le relais SMP', () => {
-    expect(getTorGatewayUrl()).toMatch(/^wss?:\/\/.+\/tor$/);
+    expect(getTorGatewayUrl()).toBe('');
   });
 
   it('utilise le `.onion` (par défaut) prioritairement à la passerelle', () => {

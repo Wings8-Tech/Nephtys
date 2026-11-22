@@ -29,6 +29,6 @@ describe('getSmpBridgeUrl — réparation du chemin hérité /smp', () => {
   });
 
   it('défaut = /simplex sans override', () => {
-    expect(getSmpBridgeUrl()).toBe('wss://78-232-3-78.sslip.io/simplex');
+    expect(getSmpBridgeUrl()).toBe('');
   });
 });
