@@ -5,6 +5,7 @@ revoke all on function public.wings8_exec_sql(text) from public, anon, authentic
 grant execute on function public.wings8_exec_sql(text) to wings8_migrator;
 
 revoke all on function public.handle_new_user() from public, anon, authenticated;
+grant execute on function public.handle_new_user() to supabase_auth_admin;
 
 revoke all on function public.purge_auth_login_failures() from public, anon, authenticated;
 revoke all on function public.purge_auth_throttle() from public, anon, authenticated;
