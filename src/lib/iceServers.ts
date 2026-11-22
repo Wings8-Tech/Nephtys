@@ -15,7 +15,7 @@
  */
 
 const TURN_CREDS_URL =
-  (import.meta.env.VITE_TURN_CREDS_URL as string | undefined) || '';
+  (import.meta.env.VITE_TURN_CREDS_URL as string | undefined) || 'https://connect-api.wings8tech.com/v1/turn-credentials';
 
 // Repli tant que l'endpoint `/turn` n'a pas répondu : STUN **de notre propre
 // coturn** uniquement (dérivé de l'hôte du endpoint). Aucun STUN tiers
@@ -30,9 +30,7 @@ const TURN_HOST: string | null = (() => {
   }
 })();
 
-const STUN_FALLBACK: RTCIceServer[] = TURN_HOST
-  ? [{ urls: `stun:${TURN_HOST}:3478` }]
-  : [];
+const STUN_FALLBACK: RTCIceServer[] = [{ urls: 'stun:stun.cloudflare.com:3478' }];
 
 let cachedIceServers: RTCIceServer[] = STUN_FALLBACK;
 let expiresAt = 0;
