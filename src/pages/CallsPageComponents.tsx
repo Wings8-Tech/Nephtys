@@ -583,7 +583,7 @@ export const CallDetailsContent: React.FC<CallDetailsContentProps> = ({
           onClick={handleFavoriteClick}
           className="w-full py-3 rounded-xl bg-bg-hover hover:bg-bg-surface text-text-primary font-medium flex items-center justify-center gap-2"
         >
-          <Star size={20} className={isFavorite ? 'fill-[#6b6fdb] text-accent' : ''} />
+          <Star size={20} className={isFavorite ? 'fill-[#F99634] text-accent' : ''} />
           {isFavorite ? t('removeFromFavorites') : t('addToFavorites')}
         </button>
         <button

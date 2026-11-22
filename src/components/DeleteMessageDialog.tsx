@@ -99,7 +99,7 @@ export const DeleteMessageDialog: React.FC<DeleteMessageDialogProps> = ({
             {isOwn && (
               <button
                 onClick={handleDeleteForEveryone}
-                className="w-full py-3.5 px-4 rounded-xl bg-[#182229] hover:bg-[#1f2c33] transition-colors text-[#6b6fdb] font-medium text-sm border border-[#2a3942]"
+                className="w-full py-3.5 px-4 rounded-xl bg-[#182229] hover:bg-[#1f2c33] transition-colors text-[#F99634] font-medium text-sm border border-[#2a3942]"
                 type="button"
               >
                 {t('deleteForEveryone')}
@@ -109,7 +109,7 @@ export const DeleteMessageDialog: React.FC<DeleteMessageDialogProps> = ({
             {/* Delete for me */}
             <button
               onClick={handleDeleteForMe}
-              className="w-full py-3.5 px-4 rounded-xl bg-[#182229] hover:bg-[#1f2c33] transition-colors text-[#6b6fdb] font-medium text-sm border border-[#2a3942]"
+              className="w-full py-3.5 px-4 rounded-xl bg-[#182229] hover:bg-[#1f2c33] transition-colors text-[#F99634] font-medium text-sm border border-[#2a3942]"
               type="button"
             >
               {t('deleteForMe')}

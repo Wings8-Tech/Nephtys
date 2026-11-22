@@ -272,7 +272,7 @@ export const VoiceRecorder: React.FC<VoiceRecorderProps> = ({
       <div className="flex items-center gap-3 px-4 py-3">
         {/* Timer - Clean gradient text */}
         <div
-          className="text-lg font-semibold font-mono min-w-[50px] tracking-wide text-[#8286ef]"
+          className="text-lg font-semibold font-mono min-w-[50px] tracking-wide text-[#F99634]"
         >
           {formatTime(recordingTime)}
         </div>
@@ -298,7 +298,7 @@ export const VoiceRecorder: React.FC<VoiceRecorderProps> = ({
                   width: `${barWidth}px`,
                   height: `${barHeight}px`,
                   backgroundColor: isActive
-                    ? `rgba(130, 134, 239, ${0.5 + value * 0.5})`
+                    ? `rgba(249, 150, 52, ${0.5 + value * 0.5})`
                     : 'rgba(156, 163, 175, 0.4)',
                 }}
               />
@@ -340,12 +340,12 @@ export const VoiceRecorder: React.FC<VoiceRecorderProps> = ({
           )}
         </button>
         
-        {/* Send Button - App accent color #8286ef */}
+        {/* Send Button - App accent color #F99634 */}
         <button
           onClick={handleSend}
           className="w-12 h-12 rounded-full flex items-center justify-center transition-all duration-200 active:scale-90"
           style={{
-            backgroundColor: '#8286ef',
+            backgroundColor: '#F99634',
           }}
           aria-label={t('send')}
         >

@@ -111,7 +111,7 @@ export const AudioPreviewPlayer: React.FC<{ file: File; preview: string | null }
             className="w-full h-1.5 rounded-full cursor-pointer appearance-none bg-bg-hover"
             style={{
               backgroundSize: `${progress}% 100%`,
-              backgroundImage: `linear-gradient(#6b6fdb, #6b6fdb)`,
+              backgroundImage: `linear-gradient(#F99634, #F99634)`,
               backgroundRepeat: 'no-repeat'
             }}
           />

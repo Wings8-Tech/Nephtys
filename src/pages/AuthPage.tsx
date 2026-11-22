@@ -295,7 +295,7 @@ export function AuthPage() {
                   placeholder={t('usernamePlaceholder')}
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
-                  className="w-full h-9 sm:h-10 lg:h-10 pl-9 lg:pl-10 pr-3 bg-bg-hover text-text-primary text-sm rounded-xl border border-bg-hover outline-none placeholder:text-text-secondary focus:ring-2 focus:ring-[#6b6fdb]"
+                  className="w-full h-9 sm:h-10 lg:h-10 pl-9 lg:pl-10 pr-3 bg-bg-hover text-text-primary text-sm rounded-xl border border-bg-hover outline-none placeholder:text-text-secondary focus:ring-2 focus:ring-[#F99634]"
                   required
                 />
               </div>
@@ -312,7 +312,7 @@ export function AuthPage() {
                     placeholder="••••••••"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    className="w-full h-9 sm:h-10 lg:h-10 pl-9 lg:pl-10 pr-3 bg-bg-hover text-text-primary text-sm rounded-xl border border-bg-hover outline-none placeholder:text-text-secondary focus:ring-2 focus:ring-[#6b6fdb]"
+                    className="w-full h-9 sm:h-10 lg:h-10 pl-9 lg:pl-10 pr-3 bg-bg-hover text-text-primary text-sm rounded-xl border border-bg-hover outline-none placeholder:text-text-secondary focus:ring-2 focus:ring-[#F99634]"
                     required
                   />
                 </div>

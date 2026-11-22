@@ -1310,7 +1310,7 @@ export function CallsPage() {
                         }}
                         className="w-8 h-8 rounded-full hover:bg-bg-hover flex items-center justify-center transition-colors"
                       >
-                        <Star size={16} className="text-accent fill-[#6b6fdb]" />
+                        <Star size={16} className="text-accent fill-[#F99634]" />
                       </button>
                     </button>
                   )
@@ -1355,7 +1355,7 @@ export function CallsPage() {
                         }}
                         className="w-8 h-8 rounded-full hover:bg-bg-hover flex items-center justify-center transition-colors"
                       >
-                        <Star size={16} className="text-accent fill-[#6b6fdb]" />
+                        <Star size={16} className="text-accent fill-[#F99634]" />
                       </button>
                     </button>
                   )
@@ -1698,7 +1698,7 @@ export function CallsPage() {
                         <div className="flex items-center">
                           <Star
                             size={24}
-                            className={isFavorite ? 'fill-[#6b6fdb] text-accent' : 'text-text-secondary'}
+                            className={isFavorite ? 'fill-[#F99634] text-accent' : 'text-text-secondary'}
                           />
                         </div>
                       </div>

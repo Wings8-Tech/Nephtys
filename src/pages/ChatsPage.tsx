@@ -1173,8 +1173,8 @@ export function ChatsPage() {
           
           <div className="space-y-6 max-w-md mx-auto mt-8">
             <div className="flex items-start gap-4 text-left">
-              <div className="w-10 h-10 rounded-full bg-[#6b6fdb]/10 flex items-center justify-center flex-shrink-0">
-                <svg width="20" height="20" viewBox="0 0 16 20" fill="#6b6fdb">
+              <div className="w-10 h-10 rounded-full bg-[#F99634]/10 flex items-center justify-center flex-shrink-0">
+                <svg width="20" height="20" viewBox="0 0 16 20" fill="#F99634">
                   <path d="M13 7h-1V5c0-2.21-1.79-4-4-4S4 2.79 4 5v2H3c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2zm-5 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H4.9V5c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/>
                 </svg>
               </div>
@@ -1185,8 +1185,8 @@ export function ChatsPage() {
             </div>
             
             <div className="flex items-start gap-4 text-left">
-              <div className="w-10 h-10 rounded-full bg-[#6b6fdb]/10 flex items-center justify-center flex-shrink-0">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6b6fdb" strokeWidth="2">
+              <div className="w-10 h-10 rounded-full bg-[#F99634]/10 flex items-center justify-center flex-shrink-0">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F99634" strokeWidth="2">
                   <circle cx="12" cy="12" r="3"/>
                   <circle cx="19" cy="5" r="2"/>
                   <circle cx="5" cy="19" r="2"/>
@@ -1201,8 +1201,8 @@ export function ChatsPage() {
             </div>
             
             <div className="flex items-start gap-4 text-left">
-              <div className="w-10 h-10 rounded-full bg-[#6b6fdb]/10 flex items-center justify-center flex-shrink-0">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6b6fdb" strokeWidth="2">
+              <div className="w-10 h-10 rounded-full bg-[#F99634]/10 flex items-center justify-center flex-shrink-0">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F99634" strokeWidth="2">
                   <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
                   <circle cx="12" cy="12" r="3"/>
                   <line x1="3" y1="3" x2="21" y2="21"/>
@@ -1218,7 +1218,7 @@ export function ChatsPage() {
 
         <div className="absolute bottom-6 text-center">
           <p className="text-xs text-gray-500">
-            {t('developedBy')} <a href="https://www.wings8.org/" target="_blank" rel="noopener noreferrer" className="text-[#6b6fdb] hover:underline">Wings8 Technology</a> {t('footerLicense')}
+            {t('developedBy')} <a href="https://www.wings8.org/" target="_blank" rel="noopener noreferrer" className="text-[#F99634] hover:underline">Wings8 Technology</a> {t('footerLicense')}
           </p>
         </div>
       </div>

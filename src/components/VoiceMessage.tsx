@@ -420,9 +420,9 @@ export const VoiceMessage: React.FC<VoiceMessageProps> = ({
   // Helper to get waveform bar color based on state
   const getWaveformBarColor = (isActive: boolean, isOwnMessage: boolean): string => {
     if (isActive) {
-      return isOwnMessage ? 'rgba(255, 255, 255, 0.95)' : '#8286ef';
+      return isOwnMessage ? 'rgba(255, 255, 255, 0.95)' : '#F99634';
     }
-    return isOwnMessage ? 'rgba(255, 255, 255, 0.35)' : 'rgba(130, 134, 239, 0.35)';
+    return isOwnMessage ? 'rgba(255, 255, 255, 0.35)' : 'rgba(249, 150, 52, 0.35)';
   };
 
   const progress = audioDuration > 0 ? (currentTime / audioDuration) * 100 : 0;
@@ -464,14 +464,14 @@ export const VoiceMessage: React.FC<VoiceMessageProps> = ({
         className={`w-11 h-11 rounded-full flex items-center justify-center flex-shrink-0 ${
           isOwn
             ? 'bg-white/25'
-            : 'bg-[#8286ef]/20'
+            : 'bg-[#F99634]/20'
         }`}
         aria-label={isPlaying ? 'Pause' : 'Play'}
       >
         {isPlaying ? (
-          <Pause size={22} className={isOwn ? 'text-white' : 'text-[#8286ef]'} fill="currentColor" />
+          <Pause size={22} className={isOwn ? 'text-white' : 'text-[#F99634]'} fill="currentColor" />
         ) : (
-          <Play size={22} className={`${isOwn ? 'text-white' : 'text-[#8286ef]'} ml-0.5`} fill="currentColor" />
+          <Play size={22} className={`${isOwn ? 'text-white' : 'text-[#F99634]'} ml-0.5`} fill="currentColor" />
         )}
       </button>
 
@@ -517,11 +517,11 @@ export const VoiceMessage: React.FC<VoiceMessageProps> = ({
         className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${
           isOwn
             ? 'bg-white/15'
-            : 'bg-[#8286ef]/15'
+            : 'bg-[#F99634]/15'
         }`}
         aria-label={t('download')}
       >
-        <Download size={16} className={isOwn ? 'text-white/80' : 'text-[#8286ef]'} />
+        <Download size={16} className={isOwn ? 'text-white/80' : 'text-[#F99634]'} />
       </button>
     </div>
   );
