@@ -3,8 +3,8 @@
 
 import { createClient } from '@supabase/supabase-js'
 
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || 'https://betcypetbbgzyrinpqcg.supabase.co'
-const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJldGN5cGV0YmJnenlyaW5wcWNnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTUyNDAzMDksImV4cCI6MjExMDgxNjMwOX0.PdG-lz5_Mea5g_Xtrv5gZwHC8ClvOhfR0Aiunjujzh4'
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || 'https://rqyeijjxhmfpavqjvegh.supabase.co'
+const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJxeWVpamp4aG1mcGF2cWp2ZWdoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTUzODI2NTgsImV4cCI6MjExMDk1ODY1OH0.gJa0EBkL-nhDrzM5bXI_kq7eKf3xEF4qfD8dYOaQRUo'
 
 // Contournement de l'erreur « Acquiring an exclusive Navigator LockManager
 // lock "lock:nephtys-auth" immediately failed » (instable en PWA / onglets
